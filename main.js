@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 movie.innerHTML = hours;
 
                 // Remove the movie click event listener
-               // movie.removeEventListener('click', movieClickHandler);
+                movie.removeEventListener('click', movieClickHandler);
 
                 // Attach event listener to the back button
                 const backButton = movie.querySelector('.back-button');
@@ -290,6 +290,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 timeLeft--;
             }
         }, 1000);
+
+        // Handle form submission
+        const form = popup.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Kfir stolen all your money');
+            location.reload(); // Refresh the screen
+        });
     }
 
     function showMovieInfo(movieId) {
