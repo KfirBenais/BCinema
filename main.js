@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 movie.innerHTML = hours;
 
                 // Remove the movie click event listener
-                movie.removeEventListener('click', movieClickHandler);
+              //  movie.removeEventListener('click', movieClickHandler);
 
                 // Attach event listener to the back button
                 const backButton = movie.querySelector('.back-button');
