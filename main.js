@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     schedule = `
                         ${movieImg}
                         <p>Available Dates:</p>
-                        <div class="date" data-date="oct17">October 17, 2023</div>
-                        <div class="date" data-date="oct18">October 18, 2023</div>
-                        <div class="date" data-date="oct19">October 19, 2023</div>
+                        <div class="date" data-date="oct17">October 17, 2024</div>
+                        <div class="date" data-date="oct18">October 18, 2024</div>
+                        <div class="date" data-date="oct19">October 19, 2024</div>
                     `;
                     break;
                 case 'towers':
@@ -74,9 +74,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     schedule = `
                         ${movieImg}
                         <p>Available Dates:</p>
-                        <div class="date" data-date="oct20">October 20, 2023</div>
-                        <div class="date" data-date="oct21">October 21, 2023</div>
-                        <div class="date" data-date="oct22">October 22, 2023</div>
+                        <div class="date" data-date="oct20">October 20, 2024</div>
+                        <div class="date" data-date="oct21">October 21, 2024</div>
+                        <div class="date" data-date="oct22">October 22, 2024</div>
                     `;
                     break;
                 case 'king':
@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     schedule = `
                         ${movieImg}
                         <p>Available Dates:</p>
-                        <div class="date" data-date="oct23">October 23, 2023</div>
-                        <div class="date" data-date="oct24">October 24, 2023</div>
-                        <div class="date" data-date="oct25">October 25, 2023</div>
+                        <div class="date" data-date="oct23">October 23, 2024</div>
+                        <div class="date" data-date="oct24">October 24, 2024</div>
+                        <div class="date" data-date="oct25">October 25, 2024</div>
                     `;
                     break;
                 default:
