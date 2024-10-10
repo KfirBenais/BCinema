@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const form = popup.querySelector('form');
         form.addEventListener('submit', (event) => {
             event.preventDefault();
-            alert('Kfir stolen all your money');
+            alert('Kfir stole all your money');
             location.reload(); // Refresh the screen
         });
     }
