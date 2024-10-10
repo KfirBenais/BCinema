@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+#featured-movies, #lotr-movies {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.movie {
+    display: inline-grid;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px; /* Set a fixed width for the movie container */
+    position: relative; /* Ensure absolute positioning works within this container */
+}
+
+.movie img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+.date {
+    cursor: pointer;
+    color: #007BFF;
+    margin: 0.5rem 0;
+}
+
+.date:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.back-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.pay-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pay-button:hover {
+    background-color: #218838;
+}
+
+.screen {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.seats {
+    position: relative; /* Ensure absolute positioning works within this container */
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+}
+
+.seat, .sofa-border {
+    background-color: #ddd;
+    padding: 0.5rem; /* Make the seats smaller */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat:hover, .sofa-border:hover {
+    background-color: #bbb;
+}
+
+.rotate-right {
+    transform: rotate(45deg);
+}
+
+.rotate-left {
+    transform: rotate(-45deg);
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#timer {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Info icon styles */
+.info-icon {
+    cursor: pointer;
+    color: #007BFF;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.info-icon:hover {
+    text-decoration: underline;
+}
+
+/* Info popup styles */
+.info-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.info-popup h4 {
+    margin-top: 0;
+}
+
+.info-popup .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
